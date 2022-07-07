@@ -674,11 +674,11 @@ section {
   overflow-y: visible;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .bottomnav {
     display: none;
   }
-}
+} */
 
 .concontact {
   position: absolute;
