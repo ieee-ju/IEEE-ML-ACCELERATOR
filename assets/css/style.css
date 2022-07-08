@@ -552,7 +552,7 @@ section {
   text-decoration: none;
   color: white;
   font-size: 40px;
-  
+
 }
 
 .iconbox {
@@ -675,7 +675,13 @@ section {
   overflow-y: visible;
 }
 
- @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
+  .bottomnav {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 720px) {
   .bottomnav {
     display: none;
   }
