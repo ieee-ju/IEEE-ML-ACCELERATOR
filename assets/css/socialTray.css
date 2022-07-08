@@ -97,6 +97,12 @@
   }
 }
 
+@media (max-width: 780px){
+  .social-container .social-drop {
+    height: auto;
+  }
+}
+
 .ln{
   text-decoration: none !important;
   color: #fff !important;
