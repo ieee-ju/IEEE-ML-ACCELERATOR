@@ -161,3 +161,9 @@
     height: 300px;
   }
 }
+
+@media (max-width: 600px){
+  .slide img{
+    margin-top: 120px;
+  }
+}
