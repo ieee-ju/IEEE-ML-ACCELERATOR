@@ -1,6 +1,6 @@
 # IEEE JU
 
-### Deployed Webiste:
+### Deployed Website: http://ieee-jaduniv.in/IEEE-ML-ACCELERATOR/
 
 
 ## Tech Stacks Used:
