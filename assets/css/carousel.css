@@ -139,7 +139,7 @@
   }
 }
 
-@media (max-width: 380px) and (min-height: 720px) {
+@media (max-width: 380px) and (min-height: 920px) {
   .container1 {
     top: -0% !important;
   }
@@ -151,7 +151,7 @@
 }
 @media (max-width: 950px) and (min-height: 1100px) {
   .carouselPlace {
-    height: 35vh;
+    height: 300px;
   }
   .container1 {
     top: -0%;
@@ -164,6 +164,19 @@
 
 @media (max-width: 600px){
   .slide img{
-    margin-top: 120px;
+    /* margin-top: 120px; */
+    margin-top: 20%;
+    height: auto;
+  }
+}
+
+@media (min-width: 780px) and (max-width:1000px){
+  .container1{
+    height: 200px;
+  }
+  .slide img{
+    /* margin-top: 120px; */
+    margin-top: 10px;
+    height: 100px;
   }
 }
