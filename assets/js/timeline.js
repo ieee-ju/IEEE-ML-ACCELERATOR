@@ -179,24 +179,24 @@ context.beginPath();
 
         ctx.fillStyle= "#62594B";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Webinar On Web Development",140,140);
+        ctx.fillText("#",140,140);
         ctx.fillStyle= "#EC8482";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Time: 12:00 AM To 3:30 AM",140,170);
+        ctx.fillText("#",140,170);
 
         ctx.fillStyle= "#62594B";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Gaming Night - Fortnite",140,300);
+        ctx.fillText("#",140,300);
         ctx.fillStyle= "#EC8482";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Time: 4:00 AM To 10:00 AM",140,330);
+        ctx.fillText("#",140,330);
 
         ctx.fillStyle= "#62594B";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("HackO Starting Ceremony",140,620);
+        ctx.fillText("#",140,620);
         ctx.fillStyle= "white";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Time: 12:00 PM To 6:00 PM",140,650);
+        ctx.fillText("#",140,650);
 
 
 
@@ -209,7 +209,7 @@ context.beginPath();
         ctx.fill();
         ctx.fillStyle= "black";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Webinars",160,80);
+        ctx.fillText("#",160,80);
 
         ctx.beginPath();
         roundRect(ctx, 520, 55, 30, 30, 5,true,false);
@@ -218,7 +218,7 @@ context.beginPath();
         ctx.fill();
         ctx.fillStyle= "black";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("HackO Checkpoints",560,80);
+        ctx.fillText("#",560,80);
 
         ctx.beginPath();
         roundRect(ctx, 920, 55, 30, 30, 5,true,false);
@@ -227,7 +227,7 @@ context.beginPath();
         ctx.fill();
         ctx.fillStyle= "black";
         ctx.font = "bold 11pt Tahoma";
-        ctx.fillText("Breaks/Fun Sessions",960,80);
+        ctx.fillText("#",960,80);
 
         
 
