@@ -5,45 +5,45 @@ const ansBar2 = document.querySelector('.abox2');
 const qBar2 = document.querySelector('.qbox2');
 
 question[0].value = {
-  q1: 'What is the team size for HackOwasp 4.0?',
-  a1: 'A Team can consist of 2-4 members.',
-  q2: 'What if I have no team?',
-  a2: 'We will club individual members and you may form a team in our discord server as well.',
+  q1: 'Can UG3 and UG4 students attend this?',
+  a1: 'This is more like an introductory session for first years to step into the world of ML. Although If you are willing to join us to set your foot into the beautiful world of ML, then you are most welcome.',
+   q2: 'How can we register?',
+   a2: ' It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down. ',
 };
 question[1].value = {
-  q: 'Are Cross-college teams allowed?',
-  a: 'Definitely! We at Owasp encourage collaboration and teamwork.',
+  q: 'How can we register?',
+  a: ' It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down. ',
 };
 question[2].value = {
-  q: 'Will the event be completely online or does it have an offline component? ',
+  q: 'What topics will be covered in the session?',
   a: 'The event will be held in online mode only.',
 };
 question[3].value = {
-  q: 'Do I need to pay any registration fee to register for the HackOwasp?',
-  a: 'No, its free of cost.',
+  q: 'What prerequisite knowledge do I need for this event?',
+  a: 'A basic knowledge of Python will be advantageous. ',
 };
 question[4].value = {
-  q: 'Do I need Experience?',
-  a: 'No, you do not need any prior development experience. We will assign you mentors to assist you in figuring things out. Of course, willingness to think, learn, and cooperate is a cherry on the top.',
+  q: 'Is this only for JU students?',
+  a: ' Yes. It is only for JU students.',
 };
 question[5].value = {
-  q1: 'What kind of projects can we work on?',
-  a1: 'You can choose from any of our problem statements that will be released prior to our Hackathon or you can come up with your idea as well!',
-  q2: 'Can I start working on my hack before the hackathon?',
-  a2: 'No. You must start working on your project after the start of hack only.',
+  q1: 'Can I attend this event virtually?',
+  a1: 'Sorry, you cannot. This is the 1st offline event of IEEE after the pandemic. We expect enthusiastic physical presence.',
+   q2: 'Will the teams be provided with any assistance during Hackathon? ',
+   a2: 'We will have plenty of mentors and resources accessible, along with several workshops to guide the participants.',
 };
 question[6].value = {
   q: 'Will the teams be provided with any assistance during Hackathon? ',
   a: 'We will have plenty of mentors and resources accessible, along with several workshops to guide the participants.',
 };
 question[7].value = {
-  q: 'Do we have to have a working prototype / App / Website of our product?',
-  a: 'Yes, You will need a functioning prototype of how your product/idea works to pitch it to the judges in the final round.',
+  q: 'Who are the speakers?',
+  a: 'That will be revealed soon. Stay tuned!',
 };
-question[8].value = {
-  q: 'On what basis will the winners be selected? ',
-  a: 'The winners of HackOwasp 4.0 will be selected based on Evaluation criteria which will include novelty of the idea, complexity, clarity, and details in the prescribed format, feasibility, practicability, sustainability, the scale of impact, user experience, and potential for prospects.',
-};
+// question[8].value = {
+//   q: 'On what basis will the winners be selected? ',
+//   a: 'The winners of HackOwasp 4.0 will be selected based on Evaluation criteria which will include novelty of the idea, complexity, clarity, and details in the prescribed format, feasibility, practicability, sustainability, the scale of impact, user experience, and potential for prospects.',
+// };
 var c = 0;
 function print(i) {
   // question[i].style.backgroundColor="red";
