@@ -8,15 +8,15 @@ question[0].value = {
   q1: 'Can UG3 and UG4 students attend this?',
   a1: 'This is more like an introductory session for first years to step into the world of ML. Although If you are willing to join us to set your foot into the beautiful world of ML, then you are most welcome.',
    q2: 'How can we register?',
-   a2: ' It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down. ',
+   a2: ' Click on the register option at the top of the website and fill up the necessary details in the ensuing form. ',
 };
 question[1].value = {
   q: 'How can we register?',
-  a: ' It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down. ',
+  a: ' Click on the register option at the top of the website and fill up the necessary details in the ensuing form. ',
 };
 question[2].value = {
   q: 'What topics will be covered in the session?',
-  a: 'The event will be held in online mode only.',
+  a: 'It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down.',
 };
 question[3].value = {
   q: 'What prerequisite knowledge do I need for this event?',
@@ -29,14 +29,11 @@ question[4].value = {
 question[5].value = {
   q1: 'Can I attend this event virtually?',
   a1: 'Sorry, you cannot. This is the 1st offline event of IEEE after the pandemic. We expect enthusiastic physical presence.',
-   q2: 'Will the teams be provided with any assistance during Hackathon? ',
-   a2: 'We will have plenty of mentors and resources accessible, along with several workshops to guide the participants.',
+  q2: 'Will the teams be provided with any assistance during this event? ',
+  a2: 'We will have plenty of mentors and resources accessible, along with workshops to guide the participants.',
 };
+
 question[6].value = {
-  q: 'Will the teams be provided with any assistance during Hackathon? ',
-  a: 'We will have plenty of mentors and resources accessible, along with several workshops to guide the participants.',
-};
-question[7].value = {
   q: 'Who are the speakers?',
   a: 'That will be revealed soon. Stay tuned!',
 };
@@ -69,7 +66,7 @@ function print1(i) {
   qBar2.innerText = question[i].value.q2;
 }
 
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < 7; i++) {
   question[i].addEventListener('click', () => {
     if (i == 0 || i == 5) print1(i);
     else print(i);
