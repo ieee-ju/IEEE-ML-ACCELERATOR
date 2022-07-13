@@ -20,7 +20,7 @@
 }
 
 .carderprizer{
-  background-color: #765782 !important;
+  background-color: #451d8e !important;
 }
 
 body .pratcontainer {
@@ -57,17 +57,17 @@ body .pratcontainer .pratcard .face.face1 h2 {
 }
 body .pratcontainer .pratcard .face.face1 .java {
   text-align: center;
-  background-color: #fd73ff;
+  background-color: #4288c6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 body .pratcontainer .pratcard .face.face1 .python {
-  background-color: #fd73ff;
+  background-color: #4288c6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 body .pratcontainer .pratcard .face.face1 .cSharp {
-  background-color: #fd73ff;
+  background-color: #4288c6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -132,9 +132,9 @@ body .ello {
 }
 .pratcard:hover .ello, .pratcard:hover .ello1, .pratcard:hover .ello2, .pratcard:hover .ello3, .pratcard:hover .ello4{
  background-image: none;
- background: #9b69aa;  /* fallback for old browsers */
+ background: #472274;  /* fallback for old browsers */
  background: -webkit-linear-gradient(to bottom, #611488, #0d0334);  /* Chrome 10-25, Safari 5.1-6 */
- background: linear-gradient(to top, #611488, rgb(68, 5, 83),#2a0334, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: linear-gradient(to top, #611488, rgba(68, 5, 83, 0.8),#2a0334fb, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body .ello1 {
@@ -210,7 +210,7 @@ body .ello4 {
 }
 
 body .hello {
-  background: #9b69aa;  /* fallback for old browsers */
+  background: #472274;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #965895, #7149A1);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #965895, #7149A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 15px;

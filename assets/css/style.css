@@ -227,7 +227,7 @@ section {
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #765782 !important;
+  background-color: #451d8e !important;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
@@ -394,7 +394,7 @@ section {
   backdrop-filter: blur(-1px) !important;
 }
 .about .cardHeader {
-  background-color: #765782;
+  background-color: #451d8e;
   border-radius: 16px 16px 0px 0px;
 }
 
@@ -403,7 +403,7 @@ section {
   backdrop-filter: blur(32px) !important;
 }
 .problems .cardHeader{
-  background-color: #765782;
+  background-color: #451d8e;
   border-radius: 16px 16px 0px 0px;
 }
 
@@ -489,13 +489,13 @@ section {
   backdrop-filter: blur(32px) !important;
 }
 .aboutFooter .cardHeader {
-  background-color: #a6597a;
+  background-color: #451d8e;
   border-radius: 16px 16px 0px 0px;
 }
 
 #footer .teamButton a {
   text-decoration: none;
-  background-color: #a6597a;
+  background-color: #451d8e;
   text-align: center;
   padding: 10px 0px;
   display: inline-block;

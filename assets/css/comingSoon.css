@@ -11,8 +11,8 @@
 
   @keyframes textAnim {
     0% {font-size: 30px; fill: white;}
-    10% {font-size: 50px; fill: #603B5B;}
-    40% {font-size: 40px; fill: #61418F}
+    10% {font-size: 50px; fill: #FFF;}
+    40% {font-size: 40px; fill: #FFF;}
     100% {font-size: 30px; fill: white;}
   }
 
@@ -44,8 +44,8 @@
   
   @keyframes textAnim {
     0% {font-size: 80px; fill: white;}
-    10% {font-size: 100px; fill: #603B5B;}
-    40% {font-size: 70px; fill: #61418F}
+    10% {font-size: 100px; fill: #FFF;}
+    40% {font-size: 70px; fill: #FFF}
     100% {font-size: 80px; fill: white;}
   }
 
