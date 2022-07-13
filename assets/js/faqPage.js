@@ -11,20 +11,20 @@ question[0].value = {
    a2: ' Click on the register option at the top of the website and fill up the necessary details in the ensuing form. ',
 };
 question[1].value = {
-  q: 'How can we register?',
-  a: ' Click on the register option at the top of the website and fill up the necessary details in the ensuing form. ',
+  q1: 'How can we register?',
+  a1: ' Click on the register option at the top of the website and fill up the necessary details in the ensuing form. ',
 };
 question[2].value = {
-  q: 'What topics will be covered in the session?',
-  a: 'It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down.',
+  q1: 'What topics will be covered in the session?',
+  a1: 'It will be revealed soon. Let there be an element of suspense in the event, so that the anticipation does not die down.',
 };
 question[3].value = {
-  q: 'What prerequisite knowledge do I need for this event?',
-  a: 'A basic knowledge of Python will be advantageous. ',
+  q1: 'What prerequisite knowledge do I need for this event?',
+  a1: 'A basic knowledge of Python will be advantageous. ',
 };
 question[4].value = {
-  q: 'Is this only for JU students?',
-  a: ' Yes. It is only for JU students.',
+  q1: 'Is this only for JU students?',
+  a1: ' Yes. It is only for JU students.',
 };
 question[5].value = {
   q1: 'Can I attend this event virtually?',
@@ -34,8 +34,8 @@ question[5].value = {
 };
 
 question[6].value = {
-  q: 'Who are the speakers?',
-  a: 'That will be revealed soon. Stay tuned!',
+  q1: 'Who are the speakers?',
+  a1: 'That will be revealed soon. Stay tuned!',
 };
 // question[8].value = {
 //   q: 'On what basis will the winners be selected? ',
@@ -69,6 +69,6 @@ function print1(i) {
 for (let i = 0; i < 7; i++) {
   question[i].addEventListener('click', () => {
     if (i == 0 || i == 5) print1(i);
-    else print(i);
+    else print1(i);
   });
 }
