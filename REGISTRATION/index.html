@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IEEE REGISTRATION PORTAL</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+        #wrapper
+{
+  border: 1px solid #888;
+  display: inline-block;
+  padding:20px;
+  
+}
+    </style> -->
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" action="https://twitter.com/SunnyLeone?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="register-form" id="register-form" name="IEEE_REGIS">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone"><i class="zmdi zmdi-email"></i></label>
+                                <input type="number" name="phone" id="phone" placeholder="Your Contact Number"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="year"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="text" name="year" id="year" placeholder="Your Current Year"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="dept"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="text" name="dept" id="dept" placeholder="Your Department"/>
+                            </div>
+                            <div class="form-group">
+                                <p> What is your answer to the question?
+                                   <br> 
+       <input type="radio" name = "IEEE MEM" value="yes"> Yes <br> 
+       <input type="radio" name = "IEEE MEM" value="no"> No </br>
+                                </p>
+                                </div> 
+                                <!-- <div id="wrapper">
+                                    <label for="yes_no_radio">Do you agree to the terms?</label>
+                                  <p>
+                                  <input type="radio" name="yes_no" checked>Yes</input>
+                                  </p>
+                                  <p>
+                                  <input type="radio" name="yes_no">No</input>
+                                  </p>
+                                  </div> -->
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sing in  Form -->
+        <!-- <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyTgI7hwU1uWNNYRjIXtGbnjGYmBZRX1CQnv2Xybav1XoHzNPO0i3PWaNkxidjxxRzR/exec'
+        const form = document.forms['IEEE_REGIS']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert('YOUR REGISTRATION IS SUCCESSFUL'))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
