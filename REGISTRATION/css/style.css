@@ -2,7 +2,8 @@
 
 display-flex, .display-flex, .display-flex-center, .signup-content, .signin-content, .social-login, .socials {
   display: flex;
-  display: -webkit-flex; }
+  display: -webkit-flex; 
+}
 
 /* @extend list-type-ulli; */
 list-type-ulli, .socials {
@@ -383,7 +384,9 @@ input[type=radio]:not(old) + label > span {
   background-image: -o-linear-gradient(white, white);
   background-image: -webkit-linear-gradient(white, white);
   background-image: linear-gradient(white, white);
-  vertical-align: bottom; }
+  
+  vertical-align: bottom; 
+}
 
 input[type=radio]:not(old):checked + label > span {
   background-image: -moz-linear-gradient(white, white);

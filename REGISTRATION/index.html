@@ -30,33 +30,33 @@
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                        <h2 class="form-title">Sign up</h2>
-                        <form method="POST" action="https://twitter.com/SunnyLeone?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="register-form" id="register-form" name="IEEE_REGIS">
+                        <h2 class="form-title">MLAS 2.0 REGISTRATION</h2>
+                        <form method="POST" href="https://ieee-jaduniv.in/mlas-2.0/" class="register-form" id="register-form" name="IEEE_REGIS">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required/>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <input type="email" name="email" id="email" placeholder="Your Email" required/>
                             </div>
                             <div class="form-group">
-                                <label for="phone"><i class="zmdi zmdi-email"></i></label>
-                                <input type="number" name="phone" id="phone" placeholder="Your Contact Number"/>
+                                <label for="phone"><i class="zmdi zmdi-phone"></i></label>
+                                <input type="number" name="phone" id="phone" placeholder="Your Contact Number" required/>
                             </div>
                             <div class="form-group">
                                 <label for="year"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="text" name="year" id="year" placeholder="Your Current Year"/>
+                                <input type="text" name="year" id="year" placeholder="Your Current Year" required/>
                             </div>
                             <div class="form-group">
                                 <label for="dept"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="text" name="dept" id="dept" placeholder="Your Department"/>
+                                <input type="text" name="dept" id="dept" placeholder="Your Department" required/>
                             </div>
                             <div class="form-group">
                                 <p> Are you an IEEE member ?
                                    <br> 
-       <input type="radio" name = "IEEE MEM" value="yes"> Yes <br> 
-       <input type="radio" name = "IEEE MEM" value="no"> No </br>
+       <input type="radio" name = "IEEE MEM" value="yes" required> Yes <br> 
+       <input type="radio" name = "IEEE MEM" value="no" required> No </br>
                                 </p>
                                 </div> 
                                 <!-- <div id="wrapper">
@@ -134,8 +134,8 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert('YOUR REGISTRATION IS SUCCESSFUL'))
-            .catch(error => console.error('Error!', error.message))
+            .then(response => alert('YOUR REGISTRATION FOR MLAS 2.0 IS SUCCESSFUL!'))
+            .catch(error => alert('Error! PLEASE TRY REGISTERING AGAIN.', error.message))
         })
       </script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
