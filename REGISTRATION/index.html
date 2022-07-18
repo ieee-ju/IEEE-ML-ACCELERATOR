@@ -34,29 +34,29 @@
                         <form method="POST" href="https://ieee-jaduniv.in/mlas-2.0/" class="register-form" id="register-form" name="IEEE_REGIS">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                                <input type="text" name="name" id="name" class="name" placeholder="Your Name" required/>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                                <input type="email" name="email" id="email" class="email" placeholder="Your Email" required/>
                             </div>
                             <div class="form-group">
                                 <label for="phone"><i class="zmdi zmdi-phone"></i></label>
-                                <input type="number" name="phone" id="phone" placeholder="Your Contact Number" required/>
+                                <input type="number" name="phone" id="phone" class="phone" placeholder="Your Contact Number" required/>
                             </div>
                             <div class="form-group">
                                 <label for="year"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="text" name="year" id="year" placeholder="Your Current Year" required/>
+                                <input type="text" name="year" id="year" class="year" placeholder="Your Current Year" required/>
                             </div>
                             <div class="form-group">
                                 <label for="dept"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="text" name="dept" id="dept" placeholder="Your Department" required/>
+                                <input type="text" name="dept" id="dept" class="dept" placeholder="Your Department" required/>
                             </div>
                             <div class="form-group">
                                 <p> Are you an IEEE member ?
                                    <br> 
-       <input type="radio" name = "IEEE MEM" value="yes" required> Yes <br> 
-       <input type="radio" name = "IEEE MEM" value="no" required> No </br>
+       <input type="radio" name = "IEEE MEM" value="yes" class="IEEE" required> Yes <br> 
+       <input type="radio" name = "IEEE MEM" value="no" class="IEEE" required> No </br>
                                 </p>
                                 </div> 
                                 <!-- <div id="wrapper">
@@ -127,7 +127,10 @@
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script>
+        require('dotenv').config()
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyTgI7hwU1uWNNYRjIXtGbnjGYmBZRX1CQnv2Xybav1XoHzNPO0i3PWaNkxidjxxRzR/exec'
         const form = document.forms['IEEE_REGIS']
       
@@ -137,6 +140,29 @@
             .then(response => alert('YOUR REGISTRATION FOR MLAS 2.0 IS SUCCESSFUL!'))
             .catch(error => alert('Error! PLEASE TRY REGISTERING AGAIN.', error.message))
         })
+        const form1=document.querySelector('.register-form');
+        function sendMsg(e){
+            e.preventDefault();
+            
+        const name1=document.querySelector('.name');
+        const email1=document.querySelector('.email');
+        const phone1=document.querySelector('.phone');
+        const year1=document.querySelector('.year');
+        const dept1=document.querySelector('.dept');
+        const IEEE1=document.querySelector('.IEEE');
+
+        Email.send({
+        SecureToken : process.env.security,
+        To : 'email.value',
+        From : "sainikwarror132@gmail.com",
+        Subject : "REGISTRATION SUCCESSFUL",
+        Body : "Hey Sainik! Do you have a portfolio for yourself hosted online? On a domain something like... sainikkhaddar.com If you don't have one already this might be the perfect time to build one 🔥 ⏰ Tomorrow at 9 am PST we're building a Modern Portfolio on YouTube in under 60 minutes 🚀"
+        }).then(message => alert('EMAIL SENT SUCCESSFULLY'))
+          .catch(error => alert('Error! PLEASE TRY REGISTERING AGAIN.', error.message))
+        }
+
+       form1.addEventListener('Submit',sendMsg);
+
       </script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
