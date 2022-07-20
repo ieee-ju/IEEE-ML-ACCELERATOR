@@ -274,7 +274,23 @@ body {
   margin-bottom: 33px; }
 
 .signup-image {
-  margin-top: 45px; }
+  margin-top: 45px;
+  
+ }
+#tshirt{
+  transition: transform .2s;
+  
+}
+#tshirt:hover{
+  transform: scale(1.5);
+}
+ 
+.signup-image {
+  margin: 0 55px; }
+
+.form-title {
+  margin-bottom: 33px; }
+
 
 figure {
   margin-bottom: 50px;
