@@ -161,8 +161,8 @@
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script>
-        require('dotenv').config()
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyTgI7hwU1uWNNYRjIXtGbnjGYmBZRX1CQnv2Xybav1XoHzNPO0i3PWaNkxidjxxRzR/exec'
+        
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby-UvUGdReilsiM13Hoi1Cy07h6WiHVwY_N7uErZ3-NiZx8A_l_nN9PyAmQv8SiWVQi/exec'
         const form = document.forms['IEEE_REGIS']
       
         form.addEventListener('submit', e => {
@@ -182,14 +182,7 @@
         const dept1=document.querySelector('.dept');
         const IEEE1=document.querySelector('.IEEE');
 
-        Email.send({
-        SecureToken : process.env.security,
-        To : 'email.value',
-        From : "sainikwarror132@gmail.com",
-        Subject : "REGISTRATION SUCCESSFUL",
-        Body : "Hey Sainik! Do you have a portfolio for yourself hosted online? On a domain something like... sainikkhaddar.com If you don't have one already this might be the perfect time to build one 🔥 ⏰ Tomorrow at 9 am PST we're building a Modern Portfolio on YouTube in under 60 minutes 🚀"
-        }).then(message => alert('EMAIL SENT SUCCESSFULLY'))
-          .catch(error => alert('Error! PLEASE TRY REGISTERING AGAIN.', error.message))
+        
         }
 
        form1.addEventListener('Submit',sendMsg);
