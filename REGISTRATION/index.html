@@ -65,13 +65,36 @@
                                 <input type="text" name="dept" id="dept" class="dept" placeholder="Your Department"
                                     required />
                             </div>
+                            <script type="text/javascript">
+                                function ShowHideDiv(btnPassport) {
+                                    var dvPassport = document.getElementById("dvPassport");
+                                    dvPassport.style.display = btnPassport.value == "yes" ? "block" : "none";
+                                }
+                            </script>
                             <div class="form-group">
                                 <p> Are you an IEEE member?
                                     <br>
-                                    <input type="radio" name="IEEE MEM" value="yes" class="IEEE" required> Yes <br>
-                                    <input type="radio" name="IEEE MEM" value="no" class="IEEE" required> No </br>
+                                    <input type="radio" name="IEEE MEM" value="yes" onclick="ShowHideDiv(this)" class="IEEE" required> Yes <br>
+                                    <input type="radio" name="IEEE MEM" value="no" onclick="ShowHideDiv(this)" class="IEEE" required> No </br>
+                                    
+                                    
                                 </p>
                             </div>
+
+                            <div class="form-group" id="dvPassport" style="display: none">
+                                IEEE Membership ID Number:
+                                <input type="text" id="IEEE ID" class="IEEE ID" name="IEEE ID" />
+                            </div>
+
+                            
+                            <!-- <span>Do you have Passport?</span>
+                            <input type="button" value="Yes" onclick="ShowHideDiv(this)" />
+                            <input type="button" value="No" onclick="ShowHideDiv(this)" />
+                            <hr />
+                            <div id="dvPassport" style="display: none">
+                                Passport Number:
+                                <input type="text" id="txtPassportNumber" />
+                            </div> -->
 
                             <div class="form-group">
                                 <p> Do you favour Veg or Non-Veg?
@@ -92,6 +115,11 @@
                                     <input type="radio" name="T-Shirt Size" value="XXL" required> XXL </br>
                                 </p>
                             </div>
+
+
+
+
+                            
 
 
 
