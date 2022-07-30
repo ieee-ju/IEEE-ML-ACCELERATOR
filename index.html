@@ -49,8 +49,8 @@
     <style>
         .backgroundSvg {
             display: block;
-            width: 100%;
-            height: 100vh;
+            width: 10px;
+            height: 10px;
             position: fixed;
             top: 0;
             left: 0;
@@ -63,7 +63,68 @@
             top: 0;
             z-index: 0;
         }
+        .content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
 
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
     </style>
 
     <title>ML Accelerator 2.0</title>
@@ -424,8 +485,8 @@ Spread over a day, it comprises an insightful tech talk, a hands-on workshop and
 
                 <div class="cardContent aboutContent">
                     <div class ="pc-text" id="anim">
-                        <svg width="810" height="200">
-                        <text x="400" y="125" text-anchor="middle">
+                        
+                        <!-- <text x="400" y="125" text-anchor="middle">
                           <tspan id="l1">C</tspan>
                           <tspan id="l2">O</tspan>
                           <tspan id="l4">M</tspan>
@@ -437,35 +498,38 @@ Spread over a day, it comprises an insightful tech talk, a hands-on workshop and
                           <tspan id="l9">O</tspan>
                           <tspan id="l10">O</tspan>
                           <tspan id="l11">N</tspan>
-                        </text>
-                      </svg>
+                        </text> -->
+                        <!-- <div class="outer">
+                            <div class="inner">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgD6QBvNVOjZgAezoj5r2XkWsK9gQqeTsn-Q&usqp=CAU"  style="height: 250px;" alt="">
+                            </div>
+                        </div> -->
+                        <div class="content">
+                            <a href="https://www.linkedin.com/in/krisg04/" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" style="width: 500px"  src="assets/media/NOOB SENIOR.png">
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title" style="font-size: 50px">Krishnachur Ghosh</h3>
+                                <p class="content-text" style="font-size: 40px">SWE at Mobilewalla</p>
+                              </div>
+                            </a>
+                          </div>
                     </div>
     
                     <div class ="phone-text" id="anim">
-                      <svg width="300" height="200">
-                      <text x="100" y="125" text-anchor="middle">
-                        <tspan id="l1">C</tspan>
-                        <tspan id="l2">O</tspan>
-                        <tspan id="l4">M</tspan>
-                        <tspan id="l5">I</tspan>
-                        <tspan id="l6">N</tspan>
-                        <tspan id="l7">G               </tspan>
-                      
-                   
-                      </text>
-                    </svg>
+                        <div class="content">
+                            <a href="https://www.linkedin.com/in/krisg04/" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" style="width: 500px"  src="assets/media/NOOB SENIOR.png">
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title" style="font-size: 50px">Krishnachur Ghosh</h3>
+                                <p class="content-text" style="font-size: 40px">SWE at Mobilewalla</p>
+                              </div>
+                            </a>
+                          </div>
                   </div>
     
-                  <div class ="phone-text" id="anim">
-                    <svg width="300" height="200">
-                    <text x="100" y="125" text-anchor="middle">
-                      <tspan id="l8">S</tspan>
-                      <tspan id="l9">O</tspan>
-                      <tspan id="l10">O</tspan>
-                      <tspan id="l11">N</tspan>
-                    </text>
-                  </svg>
-                </div>
+                 
 
             </div>
         </div>
